@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "AI Notes API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/notes": {
+      "get": {
+        "summary": "List notes with pagination"
+      },
+      "post": {
+        "summary": "Create note"
+      }
+    },
+    "/api/notes/{id}": {
+      "get": {
+        "summary": "Get single note"
+      },
+      "put": {
+        "summary": "Update note"
+      },
+      "delete": {
+        "summary": "Delete note"
+      }
+    },
+    "/api/notes/search": {
+      "get": {
+        "summary": "Semantic search"
+      }
+    },
+    "/api/notes/{id}/summary": {
+      "post": {
+        "summary": "Generate note summary"
+      }
+    }
+  }
+}
